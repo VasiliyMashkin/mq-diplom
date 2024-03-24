@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="popup__hidden">
-      <section class="popup">
+      <div class="popup">
         <div class='popup-block'> 
           <div class="popup-content">
             <section class="aside-item">    
@@ -40,9 +40,9 @@
               <input type="submit" value="Отправить" class="popup-button">
             </section>
           </div>
-         <span class='close-block'></span> 
+          <span class='close-block'></span> 
         </div>  
-      </section>
+      </div>
     </div>
 
     <header class="header">  
@@ -53,6 +53,9 @@
               </a>
           </div>
           <nav class="header-menu">
+            <div class='menu-button-container'>
+              <div class='menu-button'></div>
+            </div>                                 
             <ul class="header-menu-list">
               <li class="header-menu-item">
                 <a href="#0" class="item-menu">главная</a>
@@ -139,6 +142,7 @@
             </h3>           
           </div>                                
         </article>
+      </div>
     </section>                        
 
 
@@ -166,7 +170,7 @@
                 <a href="#0" class="title-news">10 мест, ради которых стоит проснуться на рассвете</a>
              </h2>
               <div class="date-author">
-                <time class="news-date">10 июня 2019</time>
+                <span class="news-date">10 июня 2019</span>
                 <span class="news-author">Неизвестный автор</span>
               </div>
               <div class="text-box">
@@ -193,7 +197,7 @@
                 <a href="#0" class="title-news">Йога для начинающих в домашних условиях</a>            
               </h2>
               <div class="date-author">
-                <time class="news-date">10 июня 2019</time>
+                <span class="news-date">10 июня 2019</span>
                 <span class="news-author">Неизвестный автор</span>
               </div>
               <div class="text-box">
@@ -216,7 +220,7 @@
               <h2 class="title-news-cont"><a href="#0" class="title-news">Лучшие музыкальные
                 фестивали этого лета</a></h2>
               <div class="date-author">
-                <time class="news-date">10 июня 2019</time>
+                <span class="news-date">10 июня 2019</span>
                 <span class="news-author">Неизвестный автор</span>
               </div>
               <div class="text-box">
@@ -241,7 +245,7 @@
               <h2 class="title-news-cont"><a href="#0" class="title-news">Наукоёмкий подход к
                 кулинарии</a></h2>
               <div class="date-author">
-                <time class="news-date">10 июня 2019</time>
+                <span class="news-date">10 июня 2019</span>
                 <span class="news-author">Неизвестный автор</span>
               </div>
               <div class="text-box">
@@ -269,7 +273,7 @@
               <h2 class="title-news-cont"><a href="#0" class="title-news">делаем модные принты на
                 подушках для интерьера</a></h2>
               <div class="date-author">
-                <time class="news-date">10 июня 2019</time>
+                <span class="news-date">10 июня 2019</span>
                 <span class="news-author">Неизвестный автор</span>
               </div>
               <div class="text-box">
@@ -288,7 +292,7 @@
                 <img src="images/2.jpg" alt="Человек у моря" class="aside-img" width="70">      
               </figure>
               <div class="aside-news-content">         
-                <time class="aside-news-date">14 июня 2019</time>          
+                <span class="aside-news-date">14 июня 2019</span>          
                 <h5 class="aside-title-news">
                   <a href="#0" class="aside-text">10 мест, ради которых стоит
       проснуться</a>
@@ -300,7 +304,7 @@
                 <img src="images/151.jpg" alt="Девушка занимается йогой" class="aside-img" width="70">      
               </figure>
               <div class="aside-news-content">         
-                <time class="aside-news-date">14 июня 2019</time>          
+                <span class="aside-news-date">14 июня 2019</span>          
                 <h5 class="aside-title-news">
                   <a href="#0" class="aside-text">Йога для домашних</a>
                 </h5>                   
@@ -311,7 +315,7 @@
                 <img src="images/45.jpg" alt="Уютный балкон" class="aside-img" width="70">      
               </figure>
               <div class="aside-news-content">         
-                <time class="aside-news-date">14 июня 2019</time>          
+                <span class="aside-news-date">14 июня 2019</span>          
                 <h5 class="aside-title-news">
                   <a href="#0" class="aside-text">как мы превратили классное место в балкон</a>
                 </h5>                   
@@ -322,7 +326,7 @@
                 <img src="images/501.jpg" alt="сервированный стол" class="aside-img" width="70">      
               </figure>
               <div class="aside-news-content">         
-                <time class="aside-news-date">14 июня 2019</time>          
+                <span class="aside-news-date">14 июня 2019</span>          
                 <h5 class="aside-title-news">
                   <a href="#0" class="aside-text">Кулинарный подход к науке</a>
                 </h5>                   
@@ -331,9 +335,9 @@
             <article class="aside-block-news">
               <figure class="aside-news-img">
                 <img src="images/7.jpg" alt="женские причёски" class="aside-img" width="70">      
-            </figure>
+              </figure>
               <div class="aside-news-content">         
-                <time class="aside-news-date">14 июня 2019</time>          
+                <span class="aside-news-date">14 июня 2019</span>          
                 <h5 class="aside-title-news">
                   <a href="#0" class="aside-text">лучшие прически для распущенных волос</a>
                 </h5>                   
@@ -427,15 +431,18 @@
       <h2 class="general-title section-title">Наши изделия</h2>
       <div class="shop-containers">
         <article class="shop-container">
-          <figure class="shop-container-img">
-            <img src="images/shop-item-desk1.jpg" alt="Подушка на диване" class="shop-img">      
-          </figure>
+          <picture class="shop-container-img">
+            <source 
+              srcset="images/shop-item-tablet1.jpg" 
+              media="(max-width: 768px)">
+            <img src="images/shop-item-desk1.jpg" alt="Подушка на диване" class="shop-img"> 
+          </picture>
           <div class="shop-content">                     
             <h3 class="shop-heading">Подушки на диван</h3>          
             <p class="shop-text">Набор из двух подушек с модными принтами. Видео о создании 
               <a href="#0" class="shop-text-link">здесь.</a>
             </p>
-            <section class="shop-footer">
+            <footer class="shop-footer">
               <div class="prise-container">
                 <div class="prise-old">1000 ₽</div>
                 <div class="prise">800 ₽</div>
@@ -443,20 +450,23 @@
               <form class="shop-form">  
                 <button class="shop-button">в магазин</button>         
               </form>
-            </section>                    
+            </footer>                    
           </div>              
         </article>
         <article class="shop-container">
-          <figure class="shop-container-img">
-            <img src="images/shop-item-desk2.jpg" alt="Игрушка зайчик, рукодельная" class="shop-img">      
-          </figure>
+          <picture class="shop-container-img">
+            <source 
+              srcset="images/shop-item-tablet2.jpg" 
+              media="(max-width: 768px)">
+              <img src="images/shop-item-desk2.jpg" alt="Игрушка зайчик, рукодельная" class="shop-img">     
+          </picture>
           <div class="shop-content">                     
             <h3 class="shop-heading">Кукла «Зайчик»</h3>          
             <p class="shop-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена 
               <a href="#0" class="shop-text-link">весенняя серия постов</a>
                в блоге и несколько подкастов.               
             </p>
-            <section class="shop-footer">
+            <footer class="shop-footer">
               <div class="prise-container">
                 <div class="prise-old"></div>
                 <div class="prise">3500 ₽</div>
@@ -464,19 +474,22 @@
               <form class="shop-form">  
                 <button class="shop-button">в магазин</button>         
               </form>
-            </section>                   
+            </footer>                   
           </div>     
         </article>
         <article class="shop-container">
-          <figure class="shop-container-img">
-            <img src="images/shop-item-desk3.jpg" alt="Декоративная шестиугольная рамка" class="shop-img">      
-          </figure>
+          <picture class="shop-container-img">
+            <source 
+              srcset="images/shop-item-tablet3.jpg" 
+              media="(max-width: 768px)">
+              <img src="images/shop-item-desk3.jpg" alt="Декоративная шестиугольная рамка" class="shop-img">     
+          </picture>
           <div class="shop-content">                     
             <h3 class="shop-heading">Шестиугольная рамка</h3>          
             <p class="shop-text">Необычная рамка для украшения дома из видео   
               <a href="#0" class="shop-text-link">«Как сделать рамку из подручных средств за 30 минут»</a>
             </p> 
-            <section class="shop-footer">
+            <footer class="shop-footer">
               <div class="prise-container">
                 <div class="prise-old">500 ₽</div>
                 <div class="prise">400 ₽</div>
@@ -484,7 +497,7 @@
               <form class="shop-form">  
                 <button class="shop-button">в магазин</button>         
               </form>
-            </section>                  
+            </footer>                  
           </div>     
         </article>
       </div>

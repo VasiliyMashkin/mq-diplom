@@ -187,7 +187,8 @@ button {
 
 .header {
   padding-top: 27px;  
-  max-width: 100%;  
+  max-width: 1660px; 
+  margin: 0 auto; 
   background-color: #000000;
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
@@ -222,6 +223,10 @@ button {
   width: 179px;
 }
 
+.menu__button {
+  display: none;
+}
+
 .header-menu-item {
   display: inline;  
 }
@@ -239,7 +244,7 @@ button {
 }
 
 .header-title {
-  width: 690px;
+  max-width: 690px;
   margin: 0 auto;
   font-family: opensans-b, sans-serif;
   text-transform: uppercase;
@@ -255,7 +260,7 @@ button {
                                 /*trends*/
 
 .trends {
-  padding: 63px 0 0;
+  padding: 66px 0 0;
 }
 
 .section-title {
@@ -267,13 +272,14 @@ button {
   max-width: 1660px;
   margin: 0 auto;
   gap: 5px;
-  margin-top: 25px;
+  padding-top: 5px;
+  margin-top: 23px;
 }
 
 .trend-box {
   display: flex;
   align-items: flex-end;
-  max-width: calc(25% - 5px);
+  max-width: 25%;
   min-height: 320px; 
   padding: 15px 20px;   
   background-color: #606260;
@@ -351,7 +357,7 @@ button {
   display: flex;
 }
 .block-news:not(:first-child) {
-  margin-top: 60px;
+  margin-top: 61px;
 }
 
 .news-img{
@@ -436,14 +442,14 @@ button {
   flex-direction: column;
 }
 .aside-item:nth-child(n+2) {
-  margin-top: 60px;
+  margin-top: 62px;
 }
 
 .general-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -5px;
+  line-height: 50%;
   margin-bottom: 7px;
   display: grid; 
   place-items: center;
@@ -458,7 +464,7 @@ button {
     width: 65px;
     height: 3px;
     margin: 0 auto;
-    margin-top: 10px;    
+    margin-top: 16px;    
     background-color: #e1d9bd;
 }
 
@@ -473,23 +479,25 @@ button {
 
 .aside-news-content {
   position: relative;
-  display: flex;
+  /*display: flex;*/
   width: 180px;
   letter-spacing: -0.1px;
-  flex-direction: column;
-  margin-top: -4px;
   margin-left: 20px;
 }
 
 .aside-news-date {
+  display: block;
   font-size: 12px;
+  line-height: 80%;
   color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 5px;
 }
 
 .aside-text {
   font-family: "opensans-b", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  line-height: 50%;
   color: #000000;
 }
 .aside-text:hover {
@@ -624,6 +632,10 @@ button {
 
                                          /*Shop*/
 
+.shop {
+  padding-top: 5px;
+}
+                                         
 .shop-containers {
   display: flex;
   justify-content: space-between;
@@ -631,6 +643,7 @@ button {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  padding-top: 2px;
 }
 
 .shop-container {
@@ -648,18 +661,16 @@ button {
 .shop-container-img {
   display: block;
   max-width: 100%;
-  min-height: 205px;
+  background-color: #eff6f1;
+  height: 204px;
 }
 
 .shop-img {
   min-height: 100%;
-  max-width: 100%;
-  background-color: #eff6f1;
+  max-width: 100%;  
   background-repeat: no-repeat;
   background-position: center center;
-  object-fit: cover;
-  
-  
+  object-fit: cover;  
 }
 
 .shop-heading:hover {
@@ -669,9 +680,9 @@ button {
 .shop-content {
   flex-grow: 1;
   max-width: 100%;
-  margin-top: -15px;
+  margin-top: -4px;
   outline: 3px solid rgba(177, 155, 96, 0.6);
-  outline-offset: 20px;
+  outline-offset: 22px;
   padding-top: 28px;
   
 }
@@ -706,17 +717,18 @@ button {
 }
 
 .prise-old {
+  line-height: 50%;
   font-family: "opensans-b", sans-serif;
   font-size: 14px;
   text-decoration: line-through;
   white-space: nowrap;
+  
 }
 
 .prise {
   font-family: "opensans-b", sans-serif;
   font-size: 20px;
   white-space: nowrap;
-  margin-top: -5px;
 }
  
 .shop-button {
@@ -740,7 +752,7 @@ button {
   display: flex;
   max-width: 1200px;
   padding: 0 15px;
-  margin: 64px auto 40px;
+  margin: 70px auto 40px;
 }
 .articlis-socials {
   width: 1200px;
@@ -784,5 +796,191 @@ button {
   font-family: "opensans-b", sans-serif;
   text-align: center;
   color: #999999;
-  font-size: 12px;  
+  font-size: 12px;   
+}
+
+
+                           /*gamburger*/
+
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 3px;
+  width: 24px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .body {
+    max-width: 768px;
+  }
+
+  .header {
+    background-image: url(../images/banner-bg-tablet.jpg);
+    padding-top: 43px;
+  }
+
+  .container {
+    max-width: 728px;
+  }
+
+  .img-logo {
+    width: 157px;
+  }
+                             /*gamburger*/                           
+  .menu-button-container {
+    display: flex;
+  }                             
+  .header-menu-list {
+    display: none;
+  }
+
+  .header-title {
+    max-width: 615px;
+    font-size: 40px;
+    line-height: 1.5;
+    padding-top: 80px;
+    padding-bottom: 108px;
+  }
+
+  .general-title {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  
+
+  .trends {
+    padding-top: 52px;
+  }
+
+  .trends-container {
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .trend-box {
+    max-width: calc(100% / 2 - 3px); 
+    min-height: 245px;
+  }
+
+  .trend-title-text {
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .trend-content {
+    padding: 30px;
+  }
+
+  .main-block {
+    max-width: 698px;
+    padding: 0;
+    margin: 52px auto;
+  }
+
+  .block-news {
+    display: inline-block;
+    width: 392px;
+    margin-right: 30px;
+  }
+  .block-news:not(:last-child) {
+    border-bottom: 3px solid #eeeeee;
+  }
+
+  .img-news {
+    width: 392px;
+  }
+
+  .news-content {
+    margin-top: 15px;
+  }
+  .news-content
+
+  .title-news {
+    font-size: 17px;
+  }
+
+  .date-author {
+    margin-top: 30px;
+  }
+
+  .text-box {
+    margin-top: 28px;
+  }
+  
+  .text-news {
+    margin-bottom: 15px;
+  }
+
+  .block-news:not(:first-child) {
+    margin-top: 42px;
+  }
+
+  .shop {
+    padding: 0;
+  }
+
+
+  .shop-containers {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 45px 0;
+    margin-top: 17px;
+  }
+
+  .shop-container {
+    max-width: 47%;
+    margin-bottom: 32px;
+  }
+
+  .shop-container-img {   
+    height: 227px;
+  }
+
+  .shop-heading {
+    font-size: 16px;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+
+  .social-address {
+    margin-bottom: 43px;
+  }
+
+  
 }
