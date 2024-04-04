@@ -37,10 +37,15 @@
                 <span class="popup-span">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
                 <textarea class="popup-filed popup-texteria" placeholder="Может, больше рецептов?"></textarea>              
               </label>
-              <input type="submit" value="Отправить" class="popup-button">
+              <form>
+                <p><input type="submit" value="Отправить" class="popup-button"></p>
+              </form>
             </section>
-          </div>
-          <span class='close-block'></span> 
+          </div>                     
+          <button id="button-close">
+            <span class='close-block'></span>
+          </button>          
+          <!--<a href="#" class='close-block'></a> --> 
         </div>  
       </div>
     </div>
@@ -48,7 +53,7 @@
     <header class="header">  
         <div class="container">
           <div class="logo">
-              <a href="#0" class="iogo-link">
+              <a href="#0" class="logo-link">
                 <img class="img-logo" src="svg/noemi-logo.svg" alt="Логотип сайта">
               </a>
           </div>
@@ -87,7 +92,7 @@
       <div class="trends-container">
         <article class="trend-box img1">    
           <div class="trend-content">
-            <ul class="post-tags ">
+            <ul class="post-tags">
                <li class="nav-link-box">
                  <a href="#0" class="nav-link category">Lifestyle</a>
                </li>                         
@@ -154,11 +159,11 @@
                 src="images/last-post1.jpg" 
                 alt="Человек у моря" 
                 class="img-news" 
-                width="380"
-              />
+                
+              >
             </figure>
             <div class="news-content">
-              <ul class="post-tags">
+              <ul class="post-tags main-tags">
                  <li class="nav-link-box">
                    <a href="#0" class="nav-link">Travel</a>
                  </li>                         
@@ -182,10 +187,10 @@
           </article>
           <article class="block-news">
             <figure class="news-img">
-              <img src="images/last-post2.jpg" alt="Девушка занимается йогой" class="img-news" width="380">
+              <img src="images/last-post2.jpg" alt="Девушка занимается йогой" class="img-news">
             </figure>
             <div class="news-content">
-              <ul class="post-tags">
+              <ul class="post-tags main-tags">
                 <li class="nav-link-box">
                   <a href="#0" class="nav-link">health</a>
                 </li>
@@ -209,10 +214,10 @@
           </article>
           <article class="block-news">
             <figure class="news-img">
-              <img src="images/last-post3.jpg" alt="Зрители на фестивале" class="img-news" width="380">
+              <img src="images/last-post3.jpg" alt="Зрители на фестивале" class="img-news">
             </figure>
             <div class="news-content">
-              <ul class="post-tags">
+              <ul class="post-tags main-tags">
                 <li class="nav-link-box">
                   <a href="#0" class="nav-link">music</a>
                 </li>                       
@@ -231,10 +236,10 @@
           </article>
           <article class="block-news">
             <figure class="news-img">
-              <img src="images/last-post4.jpg" alt="Сервированный стол" class="img-news" width="380">
+              <img src="images/last-post4.jpg" alt="Сервированный стол" class="img-news">
             </figure>
             <div class="news-content">
-              <ul class="post-tags">
+              <ul class="post-tags main-tags">
                 <li class="nav-link-box">
                   <a href="#0" class="nav-link">lyfestyle</a>
                 </li>
@@ -256,10 +261,10 @@
           </article>
           <article class="block-news">
             <figure class="news-img">
-              <img src="images/last-post5.jpg" alt="Фирменная подушка" class="img-news" width="380">
+              <img src="images/last-post5.jpg" alt="Фирменная подушка" class="img-news">
             </figure>
             <div class="news-content">
-              <ul class="post-tags">
+              <ul class="post-tags main-tags">
                 <li class="nav-link-box">
                   <a href="#0" class="nav-link">Lifestyle</a>
                 </li>
@@ -432,9 +437,8 @@
       <div class="shop-containers">
         <article class="shop-container">
           <picture class="shop-container-img">
-            <source 
-              srcset="images/shop-item-tablet1.jpg" 
-              media="(max-width: 768px)">
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg" />
+            <source media="(max-width: 1199px)" srcset="images/shop-item-tablet1.jpg" />             
             <img src="images/shop-item-desk1.jpg" alt="Подушка на диване" class="shop-img"> 
           </picture>
           <div class="shop-content">                     
@@ -456,8 +460,11 @@
         <article class="shop-container">
           <picture class="shop-container-img">
             <source 
+              srcset="images/shop-item-mobile2.jpg" 
+              media="(max-width: 640px)">
+            <source 
               srcset="images/shop-item-tablet2.jpg" 
-              media="(max-width: 768px)">
+              media="(max-width: 1199px)">
               <img src="images/shop-item-desk2.jpg" alt="Игрушка зайчик, рукодельная" class="shop-img">     
           </picture>
           <div class="shop-content">                     
@@ -480,8 +487,11 @@
         <article class="shop-container">
           <picture class="shop-container-img">
             <source 
+              srcset="images/shop-item-mobile3.jpg" 
+              media="(max-width: 640px)">
+            <source 
               srcset="images/shop-item-tablet3.jpg" 
-              media="(max-width: 768px)">
+              media="(max-width: 1199px)">
               <img src="images/shop-item-desk3.jpg" alt="Декоративная шестиугольная рамка" class="shop-img">     
           </picture>
           <div class="shop-content">                     
